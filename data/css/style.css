@@ -647,6 +647,23 @@ input[type="number"] {
   border-radius: 50% !important;
 }
 
+.about-mission img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about .team-member {
+  -webkit-box-shadow: 0 0 10px #cccccc;
+          box-shadow: 0 0 10px #cccccc;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.about .team-member h2, .about .team-member p {
+  color: #222222;
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 992px) {
   .select-group select {
     width: 50%;

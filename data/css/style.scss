@@ -519,6 +519,23 @@ input[type="number"] {
     }
 }
 
+.about{
+    &-mission{
+        img{
+            object-fit: cover;
+        }
+    }
+    .team-member{
+        box-shadow: 0 0 10px #cccccc;
+        padding: 20px;
+        margin-top: 20px;
+        h2, p{
+            color: #222222;
+            font-weight: bold;
+        }
+    }
+}
+
 @media only screen and (max-width: 992px) {
     
     .select-group{
