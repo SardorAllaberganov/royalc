@@ -17,7 +17,7 @@ $(document).ready(function () {
         $stat.each(function () {
             var $self = $(this);
             var prev = $self.offset();
-            if (scrollTop - prev.top > -750) {
+            if (scrollTop - prev.top > -300 && $(window).width() > 576) {
                 $self.css("opacity", "1");
                 $(this)
                     .find($(".animation_left"))
@@ -28,6 +28,18 @@ $(document).ready(function () {
                 $(this)
                     .find($(".animation_top"))
                     .addClass("animate__animated animate__fadeInUp");
+            }
+            else if($(window).width() < 576 && scrollTop - prev.top > -750){
+                $self.css("opacity", "1");
+                $(this)
+                    .find($(".animation_left"))
+                    .addClass("animate__animated animate__fadeIn");
+                $(this)
+                    .find($(".animation_right"))
+                    .addClass("animate__animated animate__fadeIn");
+                $(this)
+                    .find($(".animation_top"))
+                    .addClass("animate__animated animate__fadeIn");
             }
             else{
             }
