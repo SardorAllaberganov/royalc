@@ -392,8 +392,8 @@ input[type="number"] {
 }
 
 .owl-item {
-  -webkit-box-shadow: 0 4px 10px #acacac;
-          box-shadow: 0 4px 10px #acacac;
+  -webkit-box-shadow: 0 4px 10px #cccccc;
+          box-shadow: 0 4px 10px #cccccc;
   margin: 20px 0;
   min-height: 530px;
 }
@@ -577,7 +577,80 @@ input[type="number"] {
   right: -100px;
 }
 
+.select-group {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.select-group select {
+  width: 25%;
+  padding: 10px;
+  border-radius: 0;
+  border-color: #cccccc;
+}
+
+.investment-item {
+  max-height: 500px;
+  display: block;
+  cursor: pointer;
+  color: #222222;
+  -webkit-box-shadow: 0 4px 10px #cccccc;
+          box-shadow: 0 4px 10px #cccccc;
+}
+
+.investment-item img {
+  width: 100%;
+}
+
+.investment-item h6, .investment-item h5 {
+  color: #1d3b70;
+  font-weight: bold;
+}
+
+.investment-item p {
+  color: #222222;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.pagination {
+  font-weight: bold;
+}
+
+.pagination .page-item.active .page-link {
+  background: #2958e5;
+  border-radius: 50%;
+}
+
+.pagination .page-item {
+  border-radius: 50%;
+}
+
+.pagination .page-link {
+  color: #222222;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  height: 100%;
+  width: 100%;
+  width: 56px;
+  height: 56px;
+  text-align: center;
+  border-radius: 50% !important;
+}
+
 @media only screen and (max-width: 992px) {
+  .select-group select {
+    width: 50%;
+  }
   .block-caption {
     margin: 20px 0;
   }
@@ -622,7 +695,16 @@ input[type="number"] {
     margin-bottom: 25px;
   }
   .carousel-caption {
-    width: 60%;
+    width: 80%;
+  }
+  .carousel-caption h3 {
+    font-size: 1.5em;
+  }
+  .investment-item {
+    margin-bottom: 15px;
+  }
+  .investment-item img {
+    max-height: 270px;
   }
 }
 
@@ -656,6 +738,16 @@ input[type="number"] {
   }
   .footer form input {
     width: 100%;
+  }
+  .select-group select {
+    width: 100%;
+  }
+  .investment-item img {
+    max-height: 260px;
+  }
+  .section-title {
+    font-size: 1.5em;
+    margin-top: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */

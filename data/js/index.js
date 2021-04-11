@@ -8,21 +8,6 @@ $(document).ready(function () {
         );
     });
 
-    // $(window).on("resize scroll", function () {
-    //     $(".animation").each(function (i, el) {
-    //         if ($(this).is(":in-viewport(0)")) {
-    //             $(this).css("opacity", "1");
-    //             $(this).find($(".animation_left")).addClass("animate__animated animate__fadeInLeft");
-    //             $(this).find($(".animation_right")).addClass(
-    //                 "animate__animated animate__fadeInRight"
-    //             );
-    //             $(this).find($(".animation_top")).addClass(
-    //                 "animate__animated animate__fadeInDown"
-    //             );
-    //         }
-    //     });
-    // });
-
     var $win = $(window);
     var $stat = $(".animation"); // Change this to affect your desired element.
 
@@ -32,7 +17,7 @@ $(document).ready(function () {
         $stat.each(function () {
             var $self = $(this);
             var prev = $self.offset();
-            if (scrollTop - prev.top > -600) {
+            if (scrollTop - prev.top > -750) {
                 $self.css("opacity", "1");
                 $(this)
                     .find($(".animation_left"))
@@ -45,7 +30,6 @@ $(document).ready(function () {
                     .addClass("animate__animated animate__fadeInUp");
             }
             else{
-                $self.css("opacity", "0");
             }
         });
     }).scroll();
@@ -125,7 +109,10 @@ $(document).ready(function () {
             0: {
                 items: 1,
             },
-            600: {
+            500: {
+                items: 1,
+            },
+            700: {
                 items: 2,
             },
             1000: {
