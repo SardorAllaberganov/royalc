@@ -17,7 +17,7 @@ $(document).ready(function () {
         $stat.each(function () {
             var $self = $(this);
             var prev = $self.offset();
-            if (scrollTop - prev.top > -300 && $(window).width() > 576) {
+            if (scrollTop - prev.top > -500 && $(window).width() > 576) {
                 $self.css("opacity", "1");
                 $(this)
                     .find($(".animation_left"))
@@ -129,6 +129,9 @@ $(document).ready(function () {
             },
             1000: {
                 items: 3,
+            },
+            1200: {
+                items: 5,
             },
         },
     });

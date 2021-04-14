@@ -596,7 +596,6 @@ input[type="number"] {
 }
 
 .investment-item {
-  max-height: 500px;
   display: block;
   cursor: pointer;
   color: #222222;
@@ -608,7 +607,8 @@ input[type="number"] {
   width: 100%;
 }
 
-.investment-item h6, .investment-item h5 {
+.investment-item h6,
+.investment-item h5 {
   color: #1d3b70;
   font-weight: bold;
 }
@@ -659,12 +659,128 @@ input[type="number"] {
   margin-top: 20px;
 }
 
-.about .team-member h2, .about .team-member p {
+.about .team-member h2,
+.about .team-member p {
   color: #222222;
   font-weight: bold;
 }
 
+.blog-item {
+  max-height: 500px;
+  display: block;
+  -webkit-display: block;
+  -webkit-box-shadow: 0 0 10px #cccccc;
+          box-shadow: 0 0 10px #cccccc;
+  margin-top: 30px;
+}
+
+.blog-item img {
+  width: 100%;
+  max-height: 300px;
+}
+
+.blog-item .blog-caption {
+  padding: 20px;
+  min-height: 200px;
+  color: #222222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.blog-item .blog-caption h6 {
+  font-weight: 600;
+  color: #1d3b70;
+}
+
+.blog-item .blog-caption p {
+  color: #222222;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.faq {
+  position: relative !important;
+}
+
+.faq::before {
+  width: 35%;
+  position: absolute;
+  content: "";
+  height: 100%;
+  background: url(../images/faq.png) no-repeat center;
+  background-size: cover;
+  left: -100px;
+}
+
+.faq #accordion {
+  background: none;
+}
+
+.faq #accordion .card {
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.faq #accordion .card-header {
+  background: none;
+  border: none;
+  font-weight: bold;
+}
+
+.faq #accordion .card-header a {
+  color: #1d3b70;
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.faq #accordion .card-header a::after {
+  font-size: 2em;
+  position: absolute;
+  top: -4px;
+  right: 0;
+  content: "\02C7";
+  /* adjust as needed, taken from font-awesome.css */
+}
+
+.faq #accordion .card-header a.collapsed:after {
+  /* symbol for "collapsed" panels */
+  content: "\02C6";
+  /* adjust as needed, taken from font-awesome.css */
+}
+
+.contacts h2 {
+  font-weight: bold;
+  color: #222222;
+  margin-bottom: 30px;
+}
+
+.contact-info p {
+  font-weight: bold;
+}
+
+.contact-info p img {
+  margin-right: 15px;
+}
+
 @media only screen and (max-width: 992px) {
+  .faq {
+    position: relative !important;
+  }
+  .faq::before {
+    content: none;
+  }
   .select-group select {
     width: 50%;
   }

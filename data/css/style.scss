@@ -475,20 +475,20 @@ input[type="number"] {
     }
 }
 
-.investment-item{
-    max-height: 500px;
+.investment-item {
     display: block;
     cursor: pointer;
     color: #222222;
     box-shadow: 0 4px 10px #cccccc;
-    img{
+    img {
         width: 100%;
     }
-    h6,h5{
+    h6,
+    h5 {
         color: #1d3b70;
         font-weight: bold;
     }
-    p{
+    p {
         color: #222222;
         display: -webkit-box;
         -webkit-line-clamp: 3;
@@ -497,16 +497,16 @@ input[type="number"] {
     }
 }
 
-.pagination{
+.pagination {
     font-weight: bold;
-    .page-item.active .page-link{
+    .page-item.active .page-link {
         background: #2958e5;
         border-radius: 50%;
     }
-    .page-item{
+    .page-item {
         border-radius: 50%;
     }
-    .page-link{
+    .page-link {
         color: #222222;
         box-shadow: none;
         border: none;
@@ -515,31 +515,127 @@ input[type="number"] {
         width: 56px;
         height: 56px;
         text-align: center;
-        border-radius: 50%!important;
+        border-radius: 50% !important;
     }
 }
 
-.about{
-    &-mission{
-        img{
+.about {
+    &-mission {
+        img {
             object-fit: cover;
         }
     }
-    .team-member{
+    .team-member {
         box-shadow: 0 0 10px #cccccc;
         padding: 20px;
         margin-top: 20px;
-        h2, p{
+        h2,
+        p {
             color: #222222;
             font-weight: bold;
         }
     }
 }
 
+.blog-item {
+    max-height: 500px;
+    display: block;
+    -webkit-display: block;
+    box-shadow: 0 0 10px #cccccc;
+    margin-top: 30px;
+    img {
+        width: 100%;
+        max-height: 300px;
+    }
+    .blog-caption {
+        padding: 20px;
+        min-height: 200px;
+        color: #222222;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        h6 {
+            font-weight: 600;
+            color: #1d3b70;
+        }
+        p {
+            color: #222222;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    }
+}
+
+.faq {
+    position: relative !important;
+    &::before {
+        width: 35%;
+        position: absolute;
+        content: "";
+        height: 100%;
+        background: url(../images/faq.png) no-repeat center;
+        background-size: cover;
+        left: -100px;
+    }
+    #accordion {
+        background: none;
+        .card {
+            border-radius: 0;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            &-header {
+                background: none;
+                border: none;
+                font-weight: bold;
+                a {
+                    color: #1d3b70;
+                    position: relative;
+                    width: 100%;
+                    display: block;
+                    &::after {
+                        font-size: 2em;
+                        position: absolute;
+                        top: -4px;
+                        right: 0;
+                        content: "\02C7"; /* adjust as needed, taken from font-awesome.css */
+                    }
+                    &.collapsed:after {
+                        /* symbol for "collapsed" panels */
+                        content: "\02C6"; /* adjust as needed, taken from font-awesome.css */
+                    }
+                }
+            }
+        }
+    }
+}
+
+.contacts{
+    h2{
+        font-weight: bold;
+        color: #222222;
+        margin-bottom: 30px;
+    }
+}
+.contact-info{
+    p{
+        font-weight: bold;
+        img{
+            margin-right: 15px;
+        }
+    }
+}
+
 @media only screen and (max-width: 992px) {
-    
-    .select-group{
-        select{
+    .faq {
+        position: relative !important;
+        &::before {
+            content: none;
+        }
+    }
+    .select-group {
+        select {
             width: 50%;
         }
     }
@@ -594,14 +690,14 @@ input[type="number"] {
     }
     .carousel-caption {
         width: 80%;
-        h3{
+        h3 {
             font-size: 1.5em;
         }
     }
-    .investment-item{
+    .investment-item {
         margin-bottom: 15px;
     }
-    .investment-item img{
+    .investment-item img {
         max-height: 270px;
     }
 }
@@ -640,15 +736,15 @@ input[type="number"] {
             }
         }
     }
-    .select-group{
-        select{
+    .select-group {
+        select {
             width: 100%;
         }
     }
-    .investment-item img{
+    .investment-item img {
         max-height: 260px;
     }
-    .section-title{
+    .section-title {
         font-size: 1.5em;
         margin-top: 15px;
     }
