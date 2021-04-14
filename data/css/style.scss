@@ -639,6 +639,15 @@ input[type="number"] {
     }
 }
 
+
+.need-more-help{
+    padding: 50px 100px;
+    background: #eee;
+    h2{
+        font-weight: bold;
+    }
+}
+
 @media only screen and (max-width: 992px) {
     .faq {
         position: relative !important;
@@ -664,6 +673,9 @@ input[type="number"] {
     }
     .px-100 {
         padding: 0 50px;
+    }
+    .need-more-help{
+        padding: 50px;
     }
     .about-section {
         padding: 50px;
@@ -714,9 +726,13 @@ input[type="number"] {
     }
 }
 
+
 @media only screen and (max-width: 576px) {
     .px-100 {
         padding: 0 15px;
+    }
+    .need-more-help{
+        padding: 30px 15px;
     }
     .about-section {
         padding: 50px 30px;
