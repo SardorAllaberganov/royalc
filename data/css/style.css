@@ -559,7 +559,7 @@ input[type="number"] {
   font-weight: bold;
 }
 
-.investor-app {
+.investor-app, .entreprenuer-app {
   overflow: hidden;
 }
 
@@ -572,6 +572,20 @@ input[type="number"] {
   height: 100%;
   content: "";
   background: url(../images/investor-app.png) no-repeat center;
+  position: absolute;
+  top: 0;
+  right: -100px;
+}
+
+.entreprenuer-app-block {
+  position: relative;
+}
+
+.entreprenuer-app-block::after {
+  width: 30%;
+  height: 100%;
+  content: "";
+  background: url(../images/entrepreneur-app.png) no-repeat center;
   position: absolute;
   top: 0;
   right: -100px;
@@ -814,10 +828,10 @@ input[type="number"] {
   .footer h6 {
     margin: 20px 0;
   }
-  .investor-app-block {
+  .investor-app-block, .entreprenuer-app-block {
     position: relative;
   }
-  .investor-app-block::after {
+  .investor-app-block::after, .entreprenuer-app-block::after {
     content: none;
   }
   .nav-item button {
