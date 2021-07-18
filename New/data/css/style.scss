@@ -289,6 +289,9 @@ textarea {
         color: #222222;
         font-weight: bold;
     }
+    p{
+        font-size: .9em;
+    }
 }
 
 .map-ca {
@@ -371,6 +374,24 @@ textarea {
             background: url(../img/mail.svg);
             @extend %shared-class;
         }
+    }
+}
+
+.page-title{
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.main-text{
+    line-height: 1.5;
+}
+.img{
+    img{
+        width: 100%;
+    }
+    span{
+        font-size: .9em;
     }
 }
 
