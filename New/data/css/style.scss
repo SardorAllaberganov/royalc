@@ -1,0 +1,443 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://allfont.ru/allfont.css?fonts=agency-fb");
+$active-color: #1d3b70;
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background-color: $active-color;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.dropdown-menu {
+    top: 80%;
+    min-width: max-content;
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+.dropdown-item {
+    padding: 5px 15px;
+}
+
+.navbar {
+    height: max-content;
+    padding: 20px;
+    &-brand {
+        img {
+            max-width: 150px;
+        }
+    }
+    .nav-link {
+        color: #222222;
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
+}
+
+.active-link {
+    color: $active-color !important;
+    position: relative;
+    &::after {
+        position: absolute;
+        bottom: -25px;
+        content: "";
+        height: 2px;
+        width: 100%;
+        background: #1d3b70;
+        left: 0;
+    }
+}
+
+.submenu {
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    .nav-link {
+        color: #222;
+        font-size: 0.9rem;
+    }
+    .nav-item {
+        padding: 5px 0;
+    }
+}
+
+.dropdown {
+    &-menu {
+        padding: 0;
+        overflow: hidden;
+    }
+    &-item {
+        transition: all 0.05s;
+        &:hover {
+            background: $active-color;
+            color: #fbfbfb;
+        }
+    }
+}
+
+.lang {
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -10px;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #222;
+    }
+}
+
+.carousel {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    .carousel-control-next,
+    .carousel-control-prev {
+        z-index: 99;
+        width: 5%;
+    }
+    &-item,
+    .carousel-control-next,
+    .carousel-control-prev {
+        height: 100%;
+    }
+    img {
+        padding: 0;
+        margin: 0;
+        object-fit: cover !important;
+        height: 100% !important;
+        width: 100%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    &-caption {
+        color: #222222;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        p {
+            max-width: 50%;
+            margin: 10px 0;
+        }
+    }
+    &-inner {
+        height: 100%;
+    }
+}
+.bold {
+    font-weight: 600;
+}
+
+.active-btn {
+    padding: 10px 44px;
+    width: max-content;
+    background: $active-color;
+    color: #fbfbfb;
+    border: 2px solid $active-color;
+    transition: all 0.2s;
+    border-radius: 2px;
+    &:hover {
+        background: transparent;
+        color: $active-color;
+    }
+}
+
+button,
+input,
+textarea {
+    outline: none !important;
+}
+
+.big-title {
+    color: $active-color;
+    position: relative;
+    padding-left: 10px;
+    &::before {
+        position: absolute;
+        width: 4px;
+        background: $active-color;
+        // height: calc(100% - 5px);
+        height: 100%;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        content: "";
+    }
+}
+
+.news {
+    p:first-child {
+        color: #999;
+    }
+    p:last-child {
+        color: #222;
+    }
+    p:hover:last-child {
+        color: $active-color;
+    }
+}
+
+.dca-block {
+    padding: 20px;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.2s;
+    &-inner {
+        background-color: rgba($color: #fff, $alpha: 0.5);
+        backdrop-filter: blur(5px);
+        padding: 20px;
+        max-width: 70%;
+        border-radius: 5px;
+    }
+}
+
+.inner {
+    .data {
+        background-image: url(../img/Polygon.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        font-family: "Agency FB", arial;
+        font-weight: bold;
+        position: relative;
+        padding: 20px;
+        padding-left: 50px;
+        &-bottom {
+            font-size: 2em;
+        }
+    }
+    img {
+        height: 100px;
+    }
+    .digit {
+        line-height: 1;
+        font-size: 6em;
+        &::before {
+            content: "#";
+            font-size: 0.6em;
+        }
+    }
+    a {
+        margin-top: 20px;
+        max-width: 90%;
+        display: block;
+        color: #222222;
+        font-weight: 600;
+        transition: all 0.3s;
+        &:hover {
+            color: $active-color;
+        }
+    }
+}
+
+.dca-block-right {
+    height: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    p {
+        max-width: 70%;
+        color: #222222;
+    }
+    a {
+        padding: 20px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+        transition: all 0.3s;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.key-facts {
+    background: #eee;
+}
+
+.social-networks {
+    a {
+        color: #222222;
+        font-weight: bold;
+    }
+}
+
+.map-ca {
+    background: url(../img/map-back.png) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    path {
+        transition: all 0.3s;
+        &:hover {
+            fill: #0066cc !important;
+        }
+        path.text {
+            fill: #222 !important;
+            color: #222;
+            background-color: #fff;
+        }
+    }
+}
+
+.map-info {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    p {
+        font-weight: 600;
+        span {
+            color: $active-color;
+        }
+    }
+    &::after {
+        height: 100%;
+        width: 5px;
+        content: "";
+        background: $active-color;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+.footer {
+    padding: 50px 0;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    &-logo {
+        max-width: 200px;
+    }
+    %shared-class {
+        position: absolute;
+        content: "";
+        width: 40px;
+        height: 40px;
+        left: -5px;
+        top: -5px;
+    }
+    &-address {
+        position: relative;
+        &::before {
+            background: url(../img/pin.svg);
+            @extend %shared-class;
+        }
+    }
+    &-phone {
+        position: relative;
+        &::before {
+            background: url(../img/call.svg);
+            @extend %shared-class;
+        }
+    }
+    &-mail {
+        position: relative;
+        &::before {
+            background: url(../img/mail.svg);
+            @extend %shared-class;
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .active-link ~ .dropdown-menu {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .inner {
+        margin: 20px 0;
+        .data {
+            background-position: 40%;
+            padding: 10px;
+        }
+        a {
+            max-width: 70%;
+            margin: 10px auto;
+        }
+        img {
+            width: 100px;
+        }
+    }
+    .news {
+        .col-md-3 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+    .submenu{
+        display: none;
+    }
+    .carousel{
+        border-top: 1px solid #ccc;
+    }
+    .active-link::after{
+        bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 992px) and (orientation: landscape) {
+    .carousel{
+        height: 100vh;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .social-networks .col-md-3{
+        width: 50%;
+    }
+    .carousel-caption{
+        h3{
+            font-size: 1.5em;
+        }
+        p{
+            max-width: 100%;
+            font-size: .9em;
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .news .col-md-3, .map-ca .col-6{
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    .dca-block-inner{
+        max-width: 100%;
+    }
+}
