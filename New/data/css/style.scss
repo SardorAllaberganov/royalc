@@ -289,8 +289,8 @@ textarea {
         color: #222222;
         font-weight: bold;
     }
-    p{
-        font-size: .9em;
+    p {
+        font-size: 0.9em;
     }
 }
 
@@ -339,6 +339,22 @@ textarea {
     }
 }
 
+.about {
+    img {
+        object-fit: cover;
+    }
+}
+.team-member {
+    box-shadow: 0 0 10px rgba($color: #cccccc, $alpha: .5);
+    padding: 20px;
+    margin-top: 20px;
+    h2,
+    p {
+        color: #222222;
+        font-weight: bold;
+    }
+}
+
 .footer {
     padding: 50px 0;
     width: 100%;
@@ -377,21 +393,21 @@ textarea {
     }
 }
 
-.page-title{
+.page-title {
     text-align: center;
     padding: 30px;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
 }
-.main-text{
+.main-text {
     line-height: 1.5;
 }
-.img{
-    img{
+.img {
+    img {
         width: 100%;
     }
-    span{
-        font-size: .9em;
+    span {
+        font-size: 0.9em;
     }
 }
 
@@ -422,43 +438,44 @@ textarea {
             max-width: 50%;
         }
     }
-    .submenu{
+    .submenu {
         display: none;
     }
-    .carousel{
+    .carousel {
         border-top: 1px solid #ccc;
     }
-    .active-link::after{
+    .active-link::after {
         bottom: 0;
     }
 }
 
 @media only screen and (max-width: 992px) and (orientation: landscape) {
-    .carousel{
+    .carousel {
         height: 100vh;
     }
 }
 
 @media only screen and (max-width: 768px) {
-    .social-networks .col-md-3{
+    .social-networks .col-md-3 {
         width: 50%;
     }
-    .carousel-caption{
-        h3{
+    .carousel-caption {
+        h3 {
             font-size: 1.5em;
         }
-        p{
+        p {
             max-width: 100%;
-            font-size: .9em;
+            font-size: 0.9em;
         }
     }
 }
 @media only screen and (max-width: 768px) {
-    .news .col-md-3, .map-ca .col-6{
+    .news .col-md-3,
+    .map-ca .col-6 {
         max-width: 100%;
         flex: 0 0 100%;
     }
-    .dca-block-inner{
+    .dca-block-inner {
         max-width: 100%;
     }
 }
