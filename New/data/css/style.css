@@ -250,6 +250,45 @@ textarea {
   background-color: #fff;
 }
 
+.contacts h2 {
+  font-weight: bold;
+  color: #222222;
+  margin-bottom: 30px;
+}
+
+.contact-info p a {
+  color: #222222 !important;
+}
+
+.contact-info p img {
+  margin-right: 15px;
+}
+
+.input_form {
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  border-radius: 2px;
+  background: #fefefe;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.input_form::-webkit-input-placeholder {
+  color: #222222;
+}
+
+.input_form:-ms-input-placeholder {
+  color: #222222;
+}
+
+.input_form::-ms-input-placeholder {
+  color: #222222;
+}
+
+.input_form::placeholder {
+  color: #222222;
+}
+
 .dca-block {
   padding: 20px;
   border-radius: 5px;

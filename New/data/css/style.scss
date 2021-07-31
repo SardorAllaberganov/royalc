@@ -204,18 +204,48 @@ textarea {
     p:hover:last-child {
         color: $active-color;
     }
-    a{
-        color: #222222!important;
+    a {
+        color: #222222 !important;
     }
 }
 
-.page-item.active .page-link{
+.page-item.active .page-link {
     background-color: $active-color;
     border-color: $active-color;
 }
-.page-link{
+.page-link {
     color: $active-color;
     background-color: #fff;
+}
+
+.contacts {
+    h2 {
+        font-weight: bold;
+        color: #222222;
+        margin-bottom: 30px;
+    }
+}
+.contact-info {
+    p {
+        a{
+            color: #222222!important;
+        }
+        img {
+            margin-right: 15px;
+        }
+    }
+}
+
+.input_form {
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    border-radius: 2px;
+    background: #fefefe;
+    width: 100%;
+    margin: 10px 0;
+    &::placeholder {
+        color: #222222;
+    }
 }
 
 .dca-block {
@@ -357,7 +387,7 @@ textarea {
     }
 }
 .team-member {
-    box-shadow: 0 0 10px rgba($color: #cccccc, $alpha: .5);
+    box-shadow: 0 0 10px rgba($color: #cccccc, $alpha: 0.5);
     padding: 20px;
     margin-top: 20px;
     h2,
@@ -449,7 +479,6 @@ textarea {
             flex: 0 0 50%;
             max-width: 50%;
         }
-        
     }
     .submenu {
         display: none;
