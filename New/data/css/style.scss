@@ -204,6 +204,18 @@ textarea {
     p:hover:last-child {
         color: $active-color;
     }
+    a{
+        color: #222222!important;
+    }
+}
+
+.page-item.active .page-link{
+    background-color: $active-color;
+    border-color: $active-color;
+}
+.page-link{
+    color: $active-color;
+    background-color: #fff;
 }
 
 .dca-block {
@@ -437,6 +449,7 @@ textarea {
             flex: 0 0 50%;
             max-width: 50%;
         }
+        
     }
     .submenu {
         display: none;
